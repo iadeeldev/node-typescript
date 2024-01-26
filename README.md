@@ -11,3 +11,6 @@ npm start
 # Run test case with following command
 npm test
 
+# Keep in mind
+When you hit api route from frotend or from postman please use encodeURIComponent function to encode params value. 
+We can further improve this code by adding cache for reading stock and transaction json data from files. 

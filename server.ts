@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
-import { getStockLevels } from './src/stockService';
+import { getStockLevels } from './src/services/stockService';
 import { getStockLevelsController } from './src/controllers/stockController';
 
 const app = express();

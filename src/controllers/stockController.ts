@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { getStockLevels } from '../src/services/stockService';
+import { getStockLevels } from '../services/stockService';
 
 export async function getStockLevelsController(req: Request, res: Response): Promise<void> {
   try {

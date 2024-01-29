@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
-import { getStockLevels } from '../services/stockService';
+import { getStockLevels } from '../src/services/stockService';
 
 export async function getStockLevelsController(req: Request, res: Response): Promise<void> {
   try {
     const sku = req.params.sku;
-    console.log(sku);
     const result = await getStockLevels(sku);
     res.json(result);
   } catch (error) {
